@@ -25,6 +25,7 @@ casper.then ->
 	@waitForPopup /popRequest/
 
 casper.withPopup /popRequest/, ->		
+	@click '#btnRequest'
 	@capture 'result.png'
 	@echo 'popup opened and screenshot captured into result.png'
 
